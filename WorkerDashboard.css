@@ -1,0 +1,183 @@
+/* ===============================
+   BASE LAYOUT
+   =============================== */
+
+.worker-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+  font-family: Inter, sans-serif;
+}
+
+.worker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.worker-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===============================
+   STATES
+   =============================== */
+
+.info-text {
+  color: #6b7280;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 50px;
+  border: 2px dashed #e5e7eb;
+  border-radius: 12px;
+  color: #6b7280;
+}
+
+/* ===============================
+   GRID
+   =============================== */
+
+.worker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* ===============================
+   CARD
+   =============================== */
+
+.worker-card {
+  background: white;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.worker-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.worker-card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.worker-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.description {
+  margin: 10px 0 14px;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* ===============================
+   STATUS BADGE
+   =============================== */
+
+.status {
+  width: fit-content;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.status.worker_assigned {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status.arrived {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.status.resolved {
+  background: #dcfce7;
+  color: #166534;
+}
+
+/* ===============================
+   ACTIONS
+   =============================== */
+
+.worker-actions {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.worker-actions button {
+  width: 100%;
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Arrived button */
+/* ===============================
+   ACTION BUTTON COLORS
+   =============================== */
+
+/* Primary action – Mark Arrived */
+.arrived-btn {
+  background: #2563eb;     /* professional blue */
+  color: white;
+}
+
+.arrived-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Success action – Mark Resolved */
+.resolved-btn {
+  background: #059669;     /* calm success green */
+  color: white;
+}
+
+.resolved-btn:hover {
+  background: #047857;
+}
+
+
+/* ===============================
+   COMPLETED TEXT
+   =============================== */
+
+.done-text {
+  margin-top: 14px;
+  text-align: center;
+  color: #16a34a;
+  font-weight: 600;
+  font-size: 14px;
+}

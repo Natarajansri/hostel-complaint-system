@@ -1,0 +1,35 @@
+.tracker {
+  margin-top: 10px;
+  border-left: 3px solid #ddd;
+  padding-left: 20px;
+}
+
+.step {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #bbb;
+  position: absolute;
+  left: -29px;
+  top: 3px;
+}
+
+.dot.done {
+  background: #2ecc71;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.time {
+  font-size: 13px;
+  color: gray;
+}

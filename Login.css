@@ -1,0 +1,66 @@
+/* ===============================
+   LOGIN PAGE LAYOUT
+   =============================== */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;        /* STACK VERTICALLY */
+  align-items: center;           /* CENTER HORIZONTALLY */
+  justify-content: center;       /* CENTER VERTICALLY */
+  gap: 30px;                     /* SPACE BETWEEN TITLE & CARD */
+  background: #f4f6f8;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* TOP HEADING */
+.login-page h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin: 0;
+}
+
+/* ===============================
+   LOGIN CARD
+   =============================== */
+
+.login-card {
+  background: white;
+  width: 360px;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 25px;
+}
+
+/* INPUTS */
+.login-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+}
+
+/* BUTTON */
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background-color: #4338ca;
+}
